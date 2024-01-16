@@ -4,6 +4,6 @@
     {
         public const string PLUGIN_GUID = "Hypick.FunnyAudio";
         public const string PLUGIN_NAME = "FunnyAudio";
-        public const string PLUGIN_VERSION = "0.9.0";
+        public const string PLUGIN_VERSION = "1.0.0";
     }
 }

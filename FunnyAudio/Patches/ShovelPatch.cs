@@ -7,13 +7,6 @@ namespace FunnyAudio.Patches
     [HarmonyPatch(typeof(Shovel))]
     internal class ShovelPatch
     {
-        // [HarmonyPatch("HitShovel")]
-        // [HarmonyPrefix]
-        // static void HitShovel(Shovel __instance)
-        // {
-        //     __instance.hitSFX = Plugin.newShovelHitSFX;
-        // }
-
         [HarmonyPatch("HitShovelClientRpc")]
         [HarmonyPatch("HitShovel")]
         [HarmonyPrefix]

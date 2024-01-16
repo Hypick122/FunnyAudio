@@ -16,15 +16,16 @@ namespace FunnyAudio.Core
         internal new static ManualLogSource Logger { get; private set; }
 
         internal static AudioClip[] newShovelHitSFX;
+        // internal static AudioClip[] newShovelDropSFX;
 
         internal static AudioClip[] newSpringNoises;
 
         internal static AudioClip[] newChitterSFX;
         internal static AudioClip[] newHitPlayerSFX;
-        // internal static AudioClip[] newAngryVoiceSFX;
+        internal static AudioClip[] newAngryVoiceSFX;
 
         internal static AudioClip[] newMineDetonate;
-        // internal static AudioClip[] newMineDetonateFar;
+        internal static AudioClip[] newMineDetonateFar;
 
         internal static AudioClip[] newAirhornActivate;
         internal static AudioClip[] newAirhornActivateFar;
@@ -40,13 +41,16 @@ namespace FunnyAudio.Core
             FolderLocation = FolderLocation.TrimEnd("FunnyAudio.dll".ToCharArray());
 
             LoadAssetBundle(FolderLocation + "bonk", out newShovelHitSFX);
+            // LoadAssetBundle(FolderLocation + "metalpipe", out newShovelDropSFX);
 
             LoadAssetBundle(FolderLocation + "vineboom", out newSpringNoises);
 
             LoadAssetBundle(FolderLocation + "yippee", out newChitterSFX);
             LoadAssetBundle(FolderLocation + "ahh", out newHitPlayerSFX);
+            LoadAssetBundle(FolderLocation + "angryscreech", out newAngryVoiceSFX);
 
             LoadAssetBundle(FolderLocation + "fart", out newMineDetonate);
+            LoadAssetBundle(FolderLocation + "fartfar", out newMineDetonateFar);
 
             LoadAssetBundle(FolderLocation + "moaning", out newAirhornActivate);
             LoadAssetBundle(FolderLocation + "moaningfar", out newAirhornActivateFar);

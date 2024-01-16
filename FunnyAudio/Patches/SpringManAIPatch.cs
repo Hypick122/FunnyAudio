@@ -1,5 +1,6 @@
 ﻿using FunnyAudio.Core;
 using HarmonyLib;
+using UnityEngine;
 
 namespace FunnyAudio.Patches
 {
@@ -8,11 +9,11 @@ namespace FunnyAudio.Patches
     {
         [HarmonyPatch("Update")]
         [HarmonyPostfix]
-        static void Update(SpringManAI __instance)
+        static void Update(ref AudioClip[] ___springNoises)
         {
             if (Plugin.Config.SpringNoises)
             {
-                __instance.springNoises = Plugin.newSpringNoises;
+                ___springNoises = Plugin.newSpringNoises;
             }
         }
     }

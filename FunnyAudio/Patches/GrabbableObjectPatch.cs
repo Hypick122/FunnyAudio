@@ -1,5 +1,6 @@
 ﻿using FunnyAudio.Core;
 using HarmonyLib;
+using UnityEngine;
 
 namespace FunnyAudio.Patches
 {
@@ -15,6 +16,11 @@ namespace FunnyAudio.Patches
                 __instance.GetComponent<NoisemakerProp>().noiseSFX[0] = Plugin.newAirhornActivate[0];
                 __instance.GetComponent<NoisemakerProp>().noiseSFXFar[0] = Plugin.newAirhornActivateFar[0];
             }
+
+            // if (Plugin.Config.ShovelDropSFX && __instance.itemProperties.itemName == "Shovel") // maybe Large Axle
+            // {
+            //     __instance.itemProperties.dropSFX = Plugin.newShovelDropSFX[0];
+            // }
         }
     }
 }

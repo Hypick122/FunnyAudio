@@ -14,7 +14,7 @@ namespace FunnyAudio.Patches
             if (Plugin.Config.MineDetonate)
             {
                 ___mineDetonate = Plugin.newMineDetonate;
-                ___mineDetonateFar = Plugin.newMineDetonate;
+                ___mineDetonateFar = Plugin.newMineDetonateFar;
             }
         }
     }
