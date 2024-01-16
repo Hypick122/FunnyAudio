@@ -31,9 +31,9 @@ namespace FunnyAudio.Core
 
             SpringNoises = cfg.Bind<bool>(Categories.SpringMan, "SpringNoises", true, "Replaces coil spring sounds with Vine Boom sounds (https://www.youtube.com/watch?v=Oc7Cin_87H4)").Value;
 
-            ChitterSFX = cfg.Bind<bool>(Categories.HoarderBug, "ChitterSFX", true, "Replaces the sound of the storage beetle chirping with the sound of Yippee (https://www.youtube.com/watch?v=0CqEKoy-fIQ)").Value;
-            HitPlayerSFX = cfg.Bind<bool>(Categories.HoarderBug, "HitPlayerSFX", true, "Replaces the sound of the storage beetle hitting with the sound Ahh (https://www.youtube.com/watch?v=09gX0WL0AmI)").Value;
-            AngryVoiceSFX = cfg.Bind<bool>(Categories.HoarderBug, "AngryVoiceSFX", true, "").Value;
+            ChitterSFX = cfg.Bind<bool>(Categories.HoarderBug, "ChitterSFX", true, "Replaces the sound of the Hoarding Bug with the sound of Yippee (https://www.youtube.com/watch?v=0CqEKoy-fIQ)").Value;
+            HitPlayerSFX = cfg.Bind<bool>(Categories.HoarderBug, "HitPlayerSFX", true, "Replaces the sound of the Hoarding Bug with the sound Ahh (https://www.youtube.com/watch?v=09gX0WL0AmI)").Value;
+            AngryVoiceSFX = cfg.Bind<bool>(Categories.HoarderBug, "AngryVoiceSFX", true, "Replaces the Hoarding Bug aggressiveness sound with AAAAAAGHH").Value;
 
             MineDetonate = cfg.Bind<bool>(Categories.Landmine, "MineDetonate", true, "Replaces the sound of a mine explosion with a POWERFUL explosion").Value;
 
