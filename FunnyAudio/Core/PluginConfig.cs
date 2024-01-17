@@ -10,6 +10,7 @@ namespace FunnyAudio.Core
         public const string Landmine = "Landmine";
         public const string Airhorn = "Airhorn";
         // public const string Door = "Door";
+        // public const string Items = "Items";
     }
 
     public class PluginConfig
