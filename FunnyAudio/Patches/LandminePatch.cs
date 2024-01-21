@@ -1,21 +1,27 @@
 ﻿using HarmonyLib;
-using FunnyAudio.Core;
 using UnityEngine;
 
-namespace FunnyAudio.Patches
+namespace Hypick.Patches;
+
+[HarmonyPatch(typeof(Landmine))]
+internal class LandminePatch
 {
-    [HarmonyPatch(typeof(Landmine))]
-    internal class LandminePatch
+    // public AudioSource mineAudio;
+    // public AudioSource mineFarAudio;
+    // public AudioClip mineDetonate;
+    // public AudioClip mineTrigger;
+    // public AudioClip mineDetonateFar;
+    // public AudioClip mineDeactivate;
+    // public AudioClip minePress;
+
+    [HarmonyPatch("Start")]
+    [HarmonyPostfix]
+    static void Start(ref AudioClip[] ___mineDetonate, ref AudioClip[] ___mineDetonateFar)
     {
-        [HarmonyPatch("Start")]
-        [HarmonyPostfix]
-        static void Start(ref AudioClip[] ___mineDetonate, ref AudioClip[] ___mineDetonateFar)
+        if (Plugin.Config.MineDetonate)
         {
-            if (Plugin.Config.MineDetonate)
-            {
-                ___mineDetonate = Plugin.newMineDetonate;
-                ___mineDetonateFar = Plugin.newMineDetonateFar;
-            }
+            ___mineDetonate[0] = Plugin.FartsSFX[0];
+            ___mineDetonateFar[0] = Plugin.FartsSFX[1];
         }
     }
 }

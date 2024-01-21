@@ -1,20 +1,20 @@
-﻿using FunnyAudio.Core;
-using HarmonyLib;
+﻿using HarmonyLib;
 using UnityEngine;
 
-namespace FunnyAudio.Patches
+namespace Hypick.Patches;
+
+[HarmonyPatch(typeof(SpringManAI))]
+internal class SpringManAIPatch
 {
-    [HarmonyPatch(typeof(SpringManAI))]
-    internal class SpringManAIPatch
+    // public AudioClip[] springNoises;
+
+    [HarmonyPatch("Update")]
+    [HarmonyPostfix]
+    static void Update(ref AudioClip[] ___springNoises)
     {
-        [HarmonyPatch("Update")]
-        [HarmonyPostfix]
-        static void Update(ref AudioClip[] ___springNoises)
+        if (Plugin.Config.SpringNoises)
         {
-            if (Plugin.Config.SpringNoises)
-            {
-                ___springNoises = Plugin.newSpringNoises;
-            }
+            ___springNoises = Plugin.VineBoomSFX;
         }
     }
 }
