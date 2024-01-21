@@ -122,22 +122,4 @@ public class Plugin : BaseUnityPlugin
             string folderLocation = Path.GetDirectoryName(Plugin.Instance.Info.Location);
             return Path.Combine(folderLocation, "Assets", fileName);
         }
-
-        // private static void LoadAudioClip(string filepath)
-        // {
-        //     UnityWebRequest audioClip = UnityWebRequestMultimedia.GetAudioClip(filepath, AudioType.OGGVORBIS);
-        //     audioClip.SendWebRequest();
-        //     while (!audioClip.isDone) { }
-        //     if (audioClip.error != null)
-        //     {
-        //         Logger.LogError("Error loading sounds: " + filepath + "\n" + audioClip.error);
-        //     }
-        //     AudioClip content = DownloadHandlerAudioClip.GetContent(audioClip);
-        //     if ((bool)content && (int)content.loadState == 2)
-        //     {
-        //         Logger.LogInfo("Loaded " + filepath);
-        //         content.name = Path.GetFileName(filepath);
-        //         clips.Add(content);
-        //     }
-        // }
 }
