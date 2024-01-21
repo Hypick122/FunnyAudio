@@ -35,8 +35,6 @@ public class Plugin : BaseUnityPlugin
 
     // NeedMoreBullets
     internal static List<AudioClip> NMBShotgunShoots = new();
-    // internal static AudioClip[] NMBShotgunShoot;
-    // internal static AudioClip[] NMBShotgunShoot2;
     internal static AudioClip[] NMBShotgunReload;
 
     internal static AudioClip[] NMBNutCrackerAim;
