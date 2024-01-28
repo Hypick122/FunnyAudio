@@ -6,7 +6,6 @@ namespace Hypick.Patches;
 [HarmonyPatch(typeof(Shovel))]
 internal class ShovelPatch
 {
-
     // public AudioClip reelUp;
     // public AudioClip swing;
     // public AudioClip[] hitSFX;
@@ -18,8 +17,6 @@ internal class ShovelPatch
     static void HitShovel(ref AudioClip[] ___hitSFX)
     {
         if (Plugin.Config.ShovelHitSFX)
-        {
             ___hitSFX = Plugin.BonkSFX;
-        }
     }
 }
