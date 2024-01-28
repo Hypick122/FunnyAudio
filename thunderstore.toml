@@ -7,7 +7,7 @@ repository = "https://thunderstore.io"
 [package]
 namespace = "Hypick"
 name = "FunnyAudio"
-description = "[v49] Replaces some sounds with funny ones. With configuration"
+description = "[v49] Replaces some sounds with funny ones (Fully configurable)"
 websiteUrl = "https://github.com/Hypick122/FunnyAudio"
 containsNsfwContent = false
 
@@ -21,7 +21,7 @@ readme = "README.md"
 outdir = "build"
 
 [[build.copy]]
-source = "FunnyAudio/bin/FunnyAudio.dll"
+source = "FunnyAudio/bin/Hypick.FunnyAudio.dll"
 target = "FunnyAudio.dll"
 
 [[build.copy]]

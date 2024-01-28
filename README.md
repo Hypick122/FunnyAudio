@@ -13,6 +13,8 @@ All sounds can be configured in the config ```Hypick.FunnyAudio.cfg```
    - When chirping, it makes a sound [Yippee](https://www.youtube.com/watch?v=0CqEKoy-fIQ)
    - When hit, the player makes a sound [Ahh](https://www.youtube.com/watch?v=09gX0WL0AmI)
    - When aggressive, makes the sound AAAAAAGHH
+- Shotgun
+   - Reloading and shooting makes sounds I NEED MORE BULLETS
 - Landmine now makes a BIG boom
 - Airhorn now moans
 
@@ -31,7 +33,21 @@ All sounds can be configured in the config ```Hypick.FunnyAudio.cfg```
   - При стрекотании издает звук [Yippee](https://www.youtube.com/watch?v=0CqEKoy-fIQ)
   - При ударе игроку издает звук [Ahh](https://www.youtube.com/watch?v=09gX0WL0AmI)
   - При агрессивности издает звук AAAAAAGHH
+- Дробовик
+  - Перезарядка и выстрел издает звуки I NEED MORE BULLETS
 - Мина теперь делает БОЛЬШОЙ бум
 - Сирена (Airhorn) теперь издает стоны
 
 </details>
+
+## [1.0.1] - 25.01.2024
+
+- Added 3 sounds for shotgun (i need more bullets)
+
+## [1.0.0] - 25.01.2024
+
+- Added 1 new sound
+- Added sound for distant mine explosion
+- Changed the volume of some sound effects
+- Removed dependencies from the libraries folder
+- Minor changes in the code

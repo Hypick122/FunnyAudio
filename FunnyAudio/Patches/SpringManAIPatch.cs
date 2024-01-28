@@ -13,8 +13,6 @@ internal class SpringManAIPatch
     static void Update(ref AudioClip[] ___springNoises)
     {
         if (Plugin.Config.SpringNoises)
-        {
             ___springNoises = Plugin.VineBoomSFX;
-        }
     }
 }
