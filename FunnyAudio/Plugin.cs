@@ -68,11 +68,11 @@ public class Plugin : BaseUnityPlugin
 
         LoadListAssetBundle(["moaning", "moaningfar"], MoaningsSFX);
 
-        LoadListAssetBundle(["Shotgun/blast", "Shotgun/blast2"], NMBShotgunShoots);
-        LoadAssetBundle("Shotgun/reload", out NMBShotgunReload);
-        LoadAssetBundle("NutCracker/nutcrackerturn", out NMBNutCrackerAim);
-        LoadAssetBundle("NutCracker/nutcrackerdie", out NMBNutCrackerDie);
-        LoadAssetBundle("NutCracker/nutcrackerhiteye", out NMBNutCrackerHitEye);
+        LoadListAssetBundle(["blast", "blast2"], NMBShotgunShoots);
+        LoadAssetBundle("reload", out NMBShotgunReload);
+        LoadAssetBundle("nutcrackerturn", out NMBNutCrackerAim);
+        LoadAssetBundle("nutcrackerdie", out NMBNutCrackerDie);
+        LoadAssetBundle("nutcrackerhiteye", out NMBNutCrackerHitEye);
 
         Log.LogInfo($"Applying patches...");
         _harmony.PatchAll();
@@ -118,6 +118,6 @@ public class Plugin : BaseUnityPlugin
     private string GetFilePath(string fileName)
     {
         string folderLocation = Path.GetDirectoryName(Instance.Info.Location);
-        return Path.Combine(folderLocation, "Assets", fileName);
+        return Path.Combine(folderLocation, fileName);
     }
 }
