@@ -18,6 +18,8 @@ All sounds can be configured in the config ```Hypick.FunnyAudio.cfg```
 - Landmine now makes a BIG boom
 - Airhorn now moans
 
+The sounds of I need more bullets are taken from the NutteCracker mod
+
 </details>
 
 <details>
@@ -38,9 +40,15 @@ All sounds can be configured in the config ```Hypick.FunnyAudio.cfg```
 - Мина теперь делает БОЛЬШОЙ бум
 - Сирена (Airhorn) теперь издает стоны
 
+Звуки I need more bullets взяты из мода NutteCracker
+
 </details>
 
-## [1.0.1] - 25.01.2024
+## [1.0.2] - 28.01.2024 | Current version
+
+- Исправлена проблема загрузки ассетов
+
+## [1.0.1] - 28.01.2024
 
 - Added 3 sounds for shotgun (i need more bullets)
 
