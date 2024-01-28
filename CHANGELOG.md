@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Hypick122/FunnyAudio/compare/v1.0.1...v1.0.2) (2024-01-28)
+
+
+### Bug Fixes
+
+* Fixed problem loading assets ([a5c8457](https://github.com/Hypick122/FunnyAudio/commit/a5c8457ffc32446379045375e91c3630f650569b))
+
 ## [1.0.1](https://github.com/Hypick122/FunnyAudio/compare/v1.0.0...v1.0.1) (2024-01-28)
 
 
